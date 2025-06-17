@@ -193,3 +193,45 @@ The app calculates how much each person owes or is owed based on shared expenses
      ```
 
 This logic simplifies group reimbursements without everyone paying everyone.
+
+## 📋 Sample Test Data
+
+The app comes pre-populated with test data for immediate API testing:
+
+### 👥 People
+- Shantanu
+- Sanket
+- Om
+
+### 💸 Expenses
+| Description     | Amount | Paid By   | Shared With             | Split Type |
+|-----------------|--------|-----------|--------------------------|------------|
+| Dinner          | ₹600   | Shantanu  | Shantanu, Sanket, Om     | Equal      |
+| Groceries       | ₹450   | Sanket    | Shantanu, Sanket, Om     | Equal      |
+| Petrol          | ₹300   | Om        | Shantanu, Sanket, Om     | Equal      |
+| Movie Tickets   | ₹500   | Shantanu  | Shantanu, Sanket, Om     | Equal      |
+| Pizza           | ₹280   | Sanket    | Shantanu, Sanket, Om     | Equal      |
+
+### 🧾 Settlement Summary
+- Shantanu is owed ₹170
+- Sanket owes ₹120
+- Om owes ₹50
+
+  ## 🌐 Postman Collection
+
+Test the API instantly using the public Postman collection:
+
+🔗 **Postman Collection Link**  
+[https://gist.github.com/YOUR_USERNAME/YOUR_GIST_ID](https://gist.github.com/Sachi34129/8328671497da7d608ae1c39b40af38b5)
+
+📌 Includes:
+- All required API endpoints
+- Realistic test data (Shantanu, Sanket, Om)
+- Sample expense scenarios
+- Edge case validations
+- Organized folders for quick testing
+
+📍 Deployed API Base URL  
+[https://splitapp-production-296c.up.railway.app](https://splitapp-production-296c.up.railway.app)
+
+✅ Works without any local setup.
