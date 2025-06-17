@@ -42,3 +42,34 @@ split-app-backend/
 └── README.md
 ```
 
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/split-app-backend.git
+cd split-app-backend
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root directory and add your MongoDB URI and desired port:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+PORT=3000
+```
+
+### 4. Start the Server
+
+```bash
+npm start
+```
+
+The server will run on `http://localhost:3000`.
