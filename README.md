@@ -22,6 +22,7 @@ An expense-splitting backend system inspired by apps like Splitwise. This API le
 
 ## 📂 Project Structure
 
+```
 split-app-backend/
 │
 ├── controllers/
@@ -39,5 +40,5 @@ split-app-backend/
 ├── index.js
 ├── package.json
 └── README.md
+```
 
---
