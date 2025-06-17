@@ -168,3 +168,28 @@ The Postman collection includes realistic test data:
 | GET    | `/api/v1/settlement/people`          | Get all unique people from expenses|
 | GET    | `/api/v1/settlement/balances`        | Show each person’s current balance |
 | GET    | `/api/v1/settlement/settlements`     | Get optimized settlement summary   |
+
+## 💡 How Settlements Work
+
+The app calculates how much each person owes or is owed based on shared expenses and who paid for them.
+
+### 🔄 Step-by-Step Logic:
+
+1. **Split Calculation**:
+   - **Equal**: Amount is divided equally among all users in `shared_with`.
+   - **Percentage**: Uses `split_values` with percentage shares (must total 100%).
+   - **Exact**: Uses `split_values` with exact amounts (must sum to total).
+
+2. **Balance Calculation**:
+   - If a person paid more than their share, they are owed (positive balance).
+   - If a person paid less, they owe others (negative balance).
+
+3. **Settlement Summary**:
+   - Matches debtors to creditors to minimize the number of transactions.
+   - Example:
+     ```
+     Shantanu owes Sanket ₹150
+     Om owes Shantanu ₹100
+     ```
+
+This logic simplifies group reimbursements without everyone paying everyone.
