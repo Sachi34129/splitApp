@@ -23,14 +23,19 @@ An expense-splitting backend system inspired by apps like Splitwise. This API le
 ## 📂 Project Structure
 
 split-app-backend/
+│
 ├── controllers/
 │   ├── expenseController.js
 │   └── settlementController.js
+│
 ├── models/
 │   └── Expense.js
+│
 ├── routes/
 │   ├── expenseRoutes.js
 │   └── settlementRoutes.js
+│
 ├── .env
 ├── index.js
 ├── package.json
+└── README.md
