@@ -16,7 +16,7 @@ An expense-splitting backend system inspired by apps like Splitwise. This API le
 ## 🚀 Live Deployment
 
 - Backend URL: splitapp-production-296c.up.railway.app  
-- Postman Collection: [Public Gist (Click to Open)](https://gist.github.com/YOUR_GIST_LINK)
+- Postman Collection: https://gist.github.com/Sachi34129/8328671497da7d608ae1c39b40af38b5
 
 ---
 
@@ -39,3 +39,5 @@ split-app-backend/
 ├── index.js
 ├── package.json
 └── README.md
+
+--
