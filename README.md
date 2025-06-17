@@ -137,3 +137,34 @@ The Postman collection includes realistic test data:
   - 🚫 Invalid Add (missing/negative fields)
   - ⚠️ Update/Delete Non-existent
   - 🔍 Get Balances with No Expenses
+
+
+## 🧠 Features
+
+### 📋 Core Functionality
+- Add, list, update, and delete shared expenses
+- Support for `equal`, `percentage`, and `exact` splits
+- Auto-calculated balances for each person
+- Simple settlement logic to minimize number of payments
+
+### 📊 Analytics & Settlements
+- Retrieve all people involved in expenses
+- View current outstanding balances
+- Get optimized settlement suggestions to clear debts
+
+### ⚠️ Input Validation & Error Handling
+- Rejects invalid expense data (negative amounts, missing fields)
+- Graceful handling of non-existent records
+- Ensures split values match the total expense based on type
+
+## 📘 API Documentation
+
+| Method | Endpoint                             | Description                         |
+|--------|--------------------------------------|-------------------------------------|
+| GET    | `/api/v1/expenses/list`              | List all expenses                   |
+| POST   | `/api/v1/expenses/create`            | Add a new expense                   |
+| PUT    | `/api/v1/expenses/update/:id`        | Update an existing expense by ID   |
+| DELETE | `/api/v1/expenses/remove/:id`        | Delete an expense by ID            |
+| GET    | `/api/v1/settlement/people`          | Get all unique people from expenses|
+| GET    | `/api/v1/settlement/balances`        | Show each person’s current balance |
+| GET    | `/api/v1/settlement/settlements`     | Get optimized settlement summary   |
