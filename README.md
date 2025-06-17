@@ -8,7 +8,7 @@ An expense-splitting backend system inspired by apps like Splitwise. This API le
 
 - **Backend**: Node.js, Express
 - **Database**: MongoDB Atlas
-- **Deployment**: Railway / Render (Free tier)
+- **Deployment**: Railway
 - **API Testing**: Postman
 
 ---
@@ -21,3 +21,16 @@ An expense-splitting backend system inspired by apps like Splitwise. This API le
 ---
 
 ## 📂 Project Structure
+
+split-app-backend/
+├── controllers/
+│   ├── expenseController.js
+│   └── settlementController.js
+├── models/
+│   └── Expense.js
+├── routes/
+│   ├── expenseRoutes.js
+│   └── settlementRoutes.js
+├── .env
+├── index.js
+├── package.json
