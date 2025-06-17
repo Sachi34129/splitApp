@@ -73,3 +73,23 @@ npm start
 ```
 
 The server will run on `http://localhost:3000`.
+
+
+## 📬 API Endpoints
+
+### 📁 Expense Management
+
+| Method | Endpoint                     | Description                    |
+|--------|------------------------------|--------------------------------|
+| GET    | `/api/v1/expenses/list`      | List all expenses              |
+| POST   | `/api/v1/expenses/create`    | Add a new expense              |
+| PUT    | `/api/v1/expenses/:id`       | Update an expense by ID        |
+| DELETE | `/api/v1/expenses/:id`       | Delete an expense by ID        |
+
+### 📁 Settlements & People
+
+| Method | Endpoint                             | Description                         |
+|--------|--------------------------------------|-------------------------------------|
+| GET    | `/api/v1/settlement/people`          | List all people involved            |
+| GET    | `/api/v1/settlement/balances`        | Show each person’s balance          |
+| GET    | `/api/v1/settlement/settlements`     | Get optimized settlement summary    |
