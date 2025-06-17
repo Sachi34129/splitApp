@@ -93,3 +93,47 @@ The server will run on `http://localhost:3000`.
 | GET    | `/api/v1/settlement/people`          | List all people involved            |
 | GET    | `/api/v1/settlement/balances`        | Show each person’s balance          |
 | GET    | `/api/v1/settlement/settlements`     | Get optimized settlement summary    |
+
+
+## 📭 Postman Collection
+
+You can test the live backend API instantly using the public Postman collection below.
+
+### ✅ Public Collection Link
+
+**🔗 [Click to View & Import Collection](https://gist.github.com/Sachi34129/8328671497da7d608ae1c39b40af38b5)**  
+*(Replace with your actual public Gist URL)*
+
+---
+
+### 🧪 Test Data Included
+
+The Postman collection includes realistic test data:
+
+| Description    | Paid By   | Amount | Category       |
+|----------------|-----------|--------|----------------|
+| Dinner         | Shantanu  | ₹600   | Food           |
+| Groceries      | Sanket    | ₹450   | Essentials     |
+| Petrol         | Om        | ₹300   | Travel         |
+| Movie Tickets  | Shantanu  | ₹500   | Entertainment  |
+| Pizza          | Sanket    | ₹280   | Food           |
+
+---
+
+### 📂 Collection Structure
+
+- **📁 Expense Management**
+  - ➕ Add Expense (5 variations)
+  - 📋 List All Expenses
+  - 🛠️ Update Expense
+  - ❌ Delete Expense
+
+- **📁 Settlements & People**
+  - 👥 Get All People
+  - 💸 Get Current Balances
+  - 🔄 Get Settlement Summary
+
+- **📁 Edge Cases & Validation**
+  - 🚫 Invalid Add (missing/negative fields)
+  - ⚠️ Update/Delete Non-existent
+  - 🔍 Get Balances with No Expenses
