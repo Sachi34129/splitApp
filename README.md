@@ -222,7 +222,7 @@ The app comes pre-populated with test data for immediate API testing:
 Test the API instantly using the public Postman collection:
 
 🔗 **Postman Collection Link**  
-[https://gist.github.com/YOUR_USERNAME/YOUR_GIST_ID](https://gist.github.com/Sachi34129/8328671497da7d608ae1c39b40af38b5)
+[https://gist.github.com/Sachi34129/8328671497da7d608ae1c39b40af38b5](https://gist.github.com/Sachi34129/8328671497da7d608ae1c39b40af38b5)
 
 📌 Includes:
 - All required API endpoints
